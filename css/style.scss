@@ -1,0 +1,35 @@
+
+@import 'var';
+@import 'mixins';
+@import './blocks/header';
+@import './blocks/problems';
+
+body {
+    display: block;
+    max-width: 1920px;
+    font-size: 15px;
+    margin: 0;
+    
+}
+.container {
+    width: 100%;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    text-decoration: none;
+    list-style: none;
+    font-family: $FontText;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
