@@ -1,0 +1,219 @@
+.infoProcess {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: $bgBlocks;
+    display: inline-block;
+
+    & .infoProcess__item1 {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 100px;
+        & .item1__left {
+            padding: 224px 0 91px 128px;
+            
+            & .underBG {
+                width: 832px;
+                height: 623px;
+                background-color: $bgLowZ;
+                
+                display: flex;
+                flex-direction: column-reverse;
+                position: relative;
+                
+    
+                & :nth-child(1) {
+                    position: absolute;
+                    bottom: 38px;
+                    right: 145px;
+                    z-index: 4;
+                }
+                & :nth-child(2) {
+                    position: absolute;
+                    top: -224px;
+                    left: 137px;
+                    right: 115px;
+                    
+                    z-index: 3;
+                }
+                
+            }
+        }
+    
+        & .item1__right {
+            width: 50%;
+            position: relative;
+            z-index: 2;
+            margin-top: 60px;
+            &::after {
+                content: "";
+    
+                width: 520px;
+                height: 520px;
+                position: absolute;
+                background: url('/img/dots.png') no-repeat;
+                top: 60px;
+                left: -270px;
+                z-index: 1;
+            }
+            & .titleText {
+                & h2 {
+                    margin-top: 300px;
+                    font-size: 76px;
+                    color: $colorText;
+                    font-family: $FontLora;
+                    line-height: 105%;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 8px;
+                    & span {
+                        font-size: 88px;
+                        color: #312C38;
+                        line-height: 105%;
+                        position: absolute;
+                        top: 200px;
+                        left: -143px;
+                        z-index: 5;
+                    }
+                }
+            }
+            & .subTitle {
+                margin-top: 50px;
+                font-family: $FontText;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 105%;
+                text-transform: uppercase;
+                color: #312C38;
+            }
+            & .text__content {
+                max-width: 425px;
+                width: 100%;
+                height: 231px;
+                line-height: 180%;
+                text-align: justify;
+                & p {
+                    font-family: $FontText;
+                    font-size: 16px;
+                    
+                    color: #1D1D1A;
+                }
+            }
+        }
+    }
+    & .infoProcess__item2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 50%;
+        
+        & .item2__right {
+            width: 50%;
+            margin-right: 185px;
+            position: relative;
+            & .img__block {
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 50px;
+                
+                &::after {
+                    content: "";
+                    background: url('/img/Group\ 238aroundWord.svg') no-repeat;
+                    width: 223px;
+                    height: 209px;
+                    position: absolute;
+                    top: 0;
+                    left: 34%;
+                    transform: translate(-50%, 0);
+                    z-index: 2;
+                }
+                &::before {
+                    content: "";
+
+                    background: url('/img/blockDots.svg') no-repeat;
+                    width: 131px;
+                    height: 117px;
+                    position: absolute;
+                    bottom: 8%;
+                    right: 52px;
+                    z-index: 2;
+                }
+                & img:nth-child(2) {
+                    position: absolute;
+                    bottom: -57px;
+                    left: -36px;
+                    z-index: 4;
+                }
+            }
+        }
+        & .item2__left {
+            margin-left: 270px;
+            margin-top: 233px;
+            margin-right: 40px;
+            & .block__content {
+                position: relative;
+                z-index: 2;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -26px;
+                    left: -102px;
+                    z-index: 1;
+                    background: url('/img/Vectordots.svg') no-repeat;
+                    width: 100%;
+                    height: 100%;
+                }
+                & .content__item {
+                    width: 560px;
+                    height: 516px;
+                    color: $colorText;
+                    font-weight: 400;
+                    font-size: 35px;
+                    line-height: 154%;
+                    font-family: $FontLora;
+                    font-style: italic;
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+    & .footer__text-item2 {
+        width: 100%;
+        margin-top: 130px;
+        display: flex;
+        gap: 250px;
+        color: #1D1D1A;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 200%;
+        font-family: $FontText;
+        text-align: justify;
+        & p:nth-child(1){
+            width: 50%;
+            margin-left: 260px;
+        }
+        & p:nth-child(2){
+            width: 50%;
+            margin-right: 260px;
+        }
+    }
+    & .infoProcess__item3 {
+        width: 100%;
+        margin-top: 215px;
+        & .item3__left {
+            width: 893px;
+            height: 534px;
+            background: $bgLowZ;
+            position: relative;
+            z-index: 2;
+            & video {
+                position: absolute;
+                top: 30%;
+                right: 6%;
+                z-index: 4;
+            }
+        }
+    }
+}
